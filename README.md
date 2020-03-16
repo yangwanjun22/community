@@ -11,4 +11,5 @@
 git
 
 ### 问题整理
-1、
+1、调用github https接口获取用户信息,偶尔报错connection reset.
+[点击](https://segmentfault.com/a/1190000021481223?utm_source=tag-newest)

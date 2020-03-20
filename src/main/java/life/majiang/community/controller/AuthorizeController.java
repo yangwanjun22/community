@@ -45,7 +45,7 @@ public class AuthorizeController {
         accessTokenDTO.setState(state);
         String accesssToken = githubProvider.getAccesssToken(accessTokenDTO);
         GithubUser githubUser = githubProvider.getUser(accesssToken);
-        if (githubUser != null) {
+        if (githubUser != null && !"".equals(githubUser.getId())) {
 
             //存入数据库
             User user = new User();
